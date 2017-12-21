@@ -157,17 +157,22 @@ if __name__ == '__main__':
 	_thread.start_new_thread(app.run, ())
 	_thread.start_new_thread(manageTokens, ())
 	accountsList = []
-	n_logging("Adidas Account Creator v1.0.0")
-	n_logging("@TheRealChefUK vb.net interface added by XO (@bigpoppadid)")
+	n_logging("Adidas Account Creator (v1.0.0.0)")
+	n_logging("@TheRealChefUK vb.net interface added by XO")
+	n_logging("https://github.com/TCWTEAM/Adidas-Account-Creator")
+	n_logging("WE ARE ENTERING THE GUESSING ZONE")
+	n_logging("Time to skiddadle....")
 	n_logging("***************************************************************************")
+	n_logging("WARNING: THIS WILL NOT WORK UNLESS YOU HAVE EDITED THE HOSTS FILE AND HAVE ALL REQUIREMENTS INSTALLED. VIEW THE README")
+	n_logging("WARNING: FOR EACH ACCOUNT YOU WANT TO CREATE YOU WILL HAVE TO SOLVE A CAPTCHA. NONE WILL SAVE UNTIL EVERY CAPTCHA IS COMPLETED")
 	creator = Generator(config['locale'], '6LdyFRkUAAAAAF2YmQ9baZ6ytpVnbVSAymVpTXKi', 'https://www.adidas.com')
-	num = input("# ACCOUNTS: ")
+	num = input("# OF ACCOUNTS TO CREATE: ")
 	webbrowser.open('http://fuckrsvpkingz.adidas.co.uk:5000/solve')
 	n_logging("Started account generator.")
 	for x in range(int(num)):
 		email = '{}-{}@{}'.format(config['prefix'], randint(1111,999999999), config['domain'])
 		allchar = string.ascii_letters + string.digits
-		passw = "".join(choice(allchar) for x in range(randint(8, 16)))
+		passw = "".join(choice(allchar) for x in range(randint(8, 12)))
 		n_logging("Task {} - Waiting for captcha token.".format(x))
 		# token = creator.fetch_token()
 		token = sendToken()
@@ -182,4 +187,4 @@ if __name__ == '__main__':
 		for item in accountsList:
 			file.write('{}\n'.format(item))
 		file.close()
-	n_logging("Saved accounts to account.txt file. You can view them also by pressing show accounts")
+	n_logging("Saved accounts to txt file.")
