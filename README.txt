@@ -1,6 +1,6 @@
 Name:Adidas Account Creator 
 Github: https://github.com/ryan9918/adidas-account-gen (original scripts)
-Github: N/A (UI version)
+Github: https://github.com/TCWTEAM/Adidas-Account-Creator (UI version)
 Version:1.0.0.0
 Website:Coming Soon
 Contact: Discord(XO
