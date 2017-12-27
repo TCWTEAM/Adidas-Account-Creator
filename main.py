@@ -44,7 +44,7 @@ log.setLevel(logging.ERROR)
 
 @app.route('/', methods=['GET'])
 def base():
-	return redirect("http://fuckrsvpkingz.adidas.co.uk:5000/solve", code=302)
+	return redirect("http://xo.adidas.co.uk:5000/solve", code=302)
 
 @app.route('/solve', methods=['GET'])
 def solve():
@@ -56,7 +56,7 @@ def solve():
 def submit():
 	token = request.form.get('g-recaptcha-response', '')
 	captureToken(token)
-	return redirect("http://fuckrsvpkingz.adidas.co.uk:5000/solve", code=302)
+	return redirect("http://xo.adidas.co.uk:5000/solve", code=302)
 
 
 class Generator():
@@ -118,8 +118,8 @@ class Generator():
 			'Referer': 'https://cp.adidas{}/web/eCom/{}/loadcreateaccount'.format(self.domain, self.language)
 			})
 		data = {
-			'firstName': 'John',
-			'lastName': 'Smith',
+			'firstName': 'Michael',
+			'lastName': 'Hanakis',
 			'minAgeCheck': 'true',
 			'day': '23',
 			'month': '05',
@@ -157,17 +157,17 @@ if __name__ == '__main__':
 	_thread.start_new_thread(app.run, ())
 	_thread.start_new_thread(manageTokens, ())
 	accountsList = []
-	n_logging("Adidas Account Creator (v1.0.0.0)")
+	n_logging("Adidas Account Creator (v1.5.0.0)")
 	n_logging("@TheRealChefUK vb.net interface added by XO")
 	n_logging("https://github.com/TCWTEAM/Adidas-Account-Creator")
-	n_logging("WE ARE ENTERING THE GUESSING ZONE")
+	n_logging("Every Living Creative Dies Alone")
 	n_logging("Time to skiddadle....")
 	n_logging("***************************************************************************")
 	n_logging("WARNING: THIS WILL NOT WORK UNLESS YOU HAVE EDITED THE HOSTS FILE AND HAVE ALL REQUIREMENTS INSTALLED. VIEW THE README")
 	n_logging("WARNING: FOR EACH ACCOUNT YOU WANT TO CREATE YOU WILL HAVE TO SOLVE A CAPTCHA. NONE WILL SAVE UNTIL EVERY CAPTCHA IS COMPLETED")
 	creator = Generator(config['locale'], '6LdyFRkUAAAAAF2YmQ9baZ6ytpVnbVSAymVpTXKi', 'https://www.adidas.com')
 	num = input("# OF ACCOUNTS TO CREATE: ")
-	webbrowser.open('http://fuckrsvpkingz.adidas.co.uk:5000/solve')
+	webbrowser.open('http://xo.adidas.co.uk:5000/solve')
 	n_logging("Started account generator.")
 	for x in range(int(num)):
 		email = '{}-{}@{}'.format(config['prefix'], randint(1111,999999999), config['domain'])
@@ -187,4 +187,5 @@ if __name__ == '__main__':
 		for item in accountsList:
 			file.write('{}\n'.format(item))
 		file.close()
-	n_logging("Saved accounts to txt file.")
+	n_logging("SUCCESSFULLY CREATED ACCOUNTS. TO VIEW VISIT ACCOUNTS.TXT OR CLICK ON SHOW ACCOUNTS")
+	n_logging("Please close this console before starting another task")

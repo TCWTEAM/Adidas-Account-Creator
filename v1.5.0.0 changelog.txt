@@ -1,0 +1,6 @@
+v1.5.0.0 Change Log
+-Added upload accounts to pastebin
+-Minor Bug Fixes
+-Updated captcha harvester
+-Added error notifications
+-Added option to edit locale
