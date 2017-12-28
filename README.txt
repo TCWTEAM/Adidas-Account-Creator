@@ -1,7 +1,7 @@
 Name:Adidas Account Creator
 Github: https://github.com/ryan9918/adidas-account-gen (original scripts)
 Github: https://github.com/TCWTEAM/Adidas-Account-Creator
-Version:1.5.0.0.
+Version:1.6.0.0
 Website:Coming Soon
 Contact: Discord(XO
 #2324)
@@ -18,10 +18,9 @@ termcolor
 
 Installation And Usage
 -----
--You need to add the below line to your hosts file (google how to do this if you do not know)
-127.0.0.1 xo.adidas.co.uk
+-Run the requirements installer batch file included
 
--Make sure you have installed all of the modules listed above, using pip install (or pip3 install if you have python2 too) to do so
+-Make sure you have installed all of the modules listed above (run the batch file)
 
 -You must SOLVE CAPTCHAS MANUALLY (one per account you want to create)
 
@@ -33,10 +32,8 @@ In the coming weeks I plan to add auto updates and more features once I can get 
 
 (This is part of a larger project I am working on so if you guys cant update see random errors or cant load the program message me asap as I probably pushed a wrong file version)
 
-Changelog to v1.5.0.0
+Changelog to v1.6.0.0
 -------------------
 -Minor Bug Fixes
--Added error handling
--Updated harvester ui
--Added upload to pastebin feature
--Made it to save locale domain and prefix to be the same when u launch again
+-Fixed bug where if you didnt have an accounts file it would freak out
+-Added a batch folder to make installing the requirements easier
