@@ -66,6 +66,9 @@ class Generator():
 		if locale.upper() == "UK":
 			self.domain = '.co.uk'
 			self.language = 'en_GB'
+		elif locale.upper() == "CA":
+			self.domain = '.ca'
+			self.language = 'en_CA'
 		else:
 			self.domain = '.com'
 			self.language = 'en_US'
@@ -118,8 +121,8 @@ class Generator():
 			'Referer': 'https://cp.adidas{}/web/eCom/{}/loadcreateaccount'.format(self.domain, self.language)
 			})
 		data = {
-			'firstName': 'Michael',
-			'lastName': 'Hanakis',
+			'firstName': 'Jason',
+			'lastName': 'Smith',
 			'minAgeCheck': 'true',
 			'day': '23',
 			'month': '05',
@@ -157,16 +160,14 @@ if __name__ == '__main__':
 	_thread.start_new_thread(app.run, ())
 	_thread.start_new_thread(manageTokens, ())
 	accountsList = []
-	n_logging("Adidas Account Creator (v1.5.0.0)")
+	n_logging("Adidas Account Creator (v3.0.0.0)")
 	n_logging("@TheRealChefUK vb.net interface added by XO")
 	n_logging("https://github.com/TCWTEAM/Adidas-Account-Creator")
-	n_logging("Every Living Creative Dies Alone")
-	n_logging("Time to skiddadle....")
 	n_logging("***************************************************************************")
 	n_logging("WARNING: THIS WILL NOT WORK UNLESS YOU HAVE EDITED THE HOSTS FILE AND HAVE ALL REQUIREMENTS INSTALLED. VIEW THE README")
 	n_logging("WARNING: FOR EACH ACCOUNT YOU WANT TO CREATE YOU WILL HAVE TO SOLVE A CAPTCHA. NONE WILL SAVE UNTIL EVERY CAPTCHA IS COMPLETED")
 	creator = Generator(config['locale'], '6LdyFRkUAAAAAF2YmQ9baZ6ytpVnbVSAymVpTXKi', 'https://www.adidas.com')
-	num = input("# OF ACCOUNTS TO CREATE: ")
+	num = input("ENTER THE # OF ACCOUNTS TO CREATE: ")
 	webbrowser.open('http://xo.adidas.co.uk:5000/solve')
 	n_logging("Started account generator.")
 	for x in range(int(num)):
@@ -188,4 +189,4 @@ if __name__ == '__main__':
 			file.write('{}\n'.format(item))
 		file.close()
 	n_logging("SUCCESSFULLY CREATED ACCOUNTS. TO VIEW VISIT ACCOUNTS.TXT OR CLICK ON SHOW ACCOUNTS")
-	n_logging("Please close this console before starting another task")
+	n_logging("PLEASE CLOSE THIS WINDOW ASAP")
