@@ -1,7 +1,7 @@
 Name:Adidas Account Creator
 Github: https://github.com/ryan9918/adidas-account-gen (original scripts)
 Github: https://github.com/TCWTEAM/Adidas-Account-Creator
-Version:1.6.0.0
+Version:3.0.0.0
 Website:Coming Soon
 Contact: Discord(XO
 #2324)
@@ -32,8 +32,11 @@ In the coming weeks I plan to add auto updates and more features once I can get 
 
 (This is part of a larger project I am working on so if you guys cant update see random errors or cant load the program message me asap as I probably pushed a wrong file version)
 
-Changelog to v1.6.0.0
+Changelog to v3.0.0.0
 -------------------
--Minor Bug Fixes
--Fixed bug where if you didnt have an accounts file it would freak out
--Added a batch folder to make installing the requirements easier
+-Better UI
+-Wayy less errors
+-A way for you guys to see when you should update
+-Added Canada Support
+-Added a working pastebin feature
+-Fixed minor bugs
