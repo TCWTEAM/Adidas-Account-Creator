@@ -4,5 +4,5 @@
 
 *NOW WITH CANADA SUPPORT*
 
-1. Test
-2. teST
+...Test
+...teST
