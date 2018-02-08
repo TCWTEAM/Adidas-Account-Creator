@@ -1,4 +1,5 @@
 # Adidas Account Creator
+## THIS IS OLD. USE THE NEW NO CAPTCHA VERSION IN MY GITHUB
 ### v3.0.0.0
 #### UI and modifications by XO Original script by @TheRealChefUK
 
